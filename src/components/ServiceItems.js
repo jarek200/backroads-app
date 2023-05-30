@@ -1,22 +1,6 @@
-export default function ServiceItems() {
-  const services = [
-    {
-      iconClass: 'fas fa-wallet fa-fw',
-      title: 'saving money',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, officia.',
-    },
-    {
-      iconClass: 'fas fa-tree fa-fw',
-      title: 'endless hiking',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, officia.',
-    },
-    {
-      iconClass: 'fas fa-socks fa-fw',
-      title: 'amazing comfort',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, officia.',
-    },
-  ]
+import { services } from './data'
 
+export default function ServiceItems() {
   return (
     <div className='section-center services-center'>
       {services.map((service, index) => (

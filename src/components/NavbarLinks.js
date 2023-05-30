@@ -1,11 +1,6 @@
-export default function NavbarLinks() {
-  const navLinks = [
-    { href: '#home', label: 'home' },
-    { href: '#about', label: 'about' },
-    { href: '#services', label: 'services' },
-    { href: '#tours', label: 'tours' },
-  ]
+import { navLinks } from './data'
 
+export default function NavbarLinks() {
   return (
     <ul className='nav-links' id='nav-links'>
       {navLinks.map((item, index) => (
