@@ -1,13 +1,15 @@
 import about from '../images/about.jpeg'
+import SectionTitle from './SectionTitle'
 export default function About() {
   return (
     <>
       <section className='section' id='about'>
-        <div className='section-title'>
+        {/* <div className='section-title'>
           <h2>
             about <span>us</span>
           </h2>
-        </div>
+        </div> */}
+        <SectionTitle firstWord='about' secondWord='us' />
 
         <div className='section-center about-center'>
           <div className='about-img'>
