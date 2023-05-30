@@ -1,4 +1,17 @@
 export default function Navbar() {
+  const navIcons = [
+    { href: 'https://www.facebook.com', iconClass: 'fab fa-facebook', target: '_blank' },
+    { href: 'https://www.twitter.com', iconClass: 'fab fa-twitter', target: '_blank' },
+    { href: 'https://www.squarespace.com', iconClass: 'fab fa-squarespace', target: '_blank' },
+  ]
+
+  const navLinks = [
+    { href: '#home', label: 'home' },
+    { href: '#about', label: 'about' },
+    { href: '#services', label: 'services' },
+    { href: '#tours', label: 'tours' },
+  ]
+
   return (
     <nav className='navbar'>
       <div className='nav-center'>
@@ -10,51 +23,23 @@ export default function Navbar() {
         </div>
 
         <ul className='nav-links' id='nav-links'>
-          <li>
-            <a href='#home' className='nav-link'>
-              {' '}
-              home{' '}
-            </a>
-          </li>
-
-          <li>
-            <a href='#about' className='nav-link'>
-              {' '}
-              about{' '}
-            </a>
-          </li>
-
-          <li>
-            <a href='#services' className='nav-link'>
-              {' '}
-              services{' '}
-            </a>
-          </li>
-
-          <li>
-            <a href='#tours' className='nav-link'>
-              {' '}
-              tours
-            </a>
-          </li>
+          {navLinks.map((item, index) => (
+            <li key={index}>
+              <a href={item.href} className='nav-link'>
+                {item.label}
+              </a>
+            </li>
+          ))}
         </ul>
 
         <ul className='nav-icons'>
-          <li>
-            <a href='https://www.twitter.com' target='_blank' className='nav-icon'>
-              <i className='fab fa-facebook'></i>
-            </a>
-          </li>
-          <li>
-            <a href='https://www.twitter.com' target='_blank' className='nav-icon'>
-              <i className='fab fa-twitter'></i>
-            </a>
-          </li>
-          <li>
-            <a href='https://www.twitter.com' target='_blank' className='nav-icon'>
-              <i className='fab fa-squarespace'></i>
-            </a>
-          </li>
+          {navIcons.map((item, index) => (
+            <li key={index}>
+              <a href={item.href} target={item.target} className='nav-icon'>
+                <i className={item.iconClass}></i>
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>
