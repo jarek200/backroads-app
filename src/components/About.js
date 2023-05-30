@@ -4,11 +4,6 @@ export default function About() {
   return (
     <>
       <section className='section' id='about'>
-        {/* <div className='section-title'>
-          <h2>
-            about <span>us</span>
-          </h2>
-        </div> */}
         <SectionTitle firstWord='about' secondWord='us' />
 
         <div className='section-center about-center'>
@@ -25,7 +20,7 @@ export default function About() {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quisquam harum nam cumque temporibus explicabo dolorum
               sapiente odio unde dolor?
             </p>
-            <a href='#' className='btn'>
+            <a href='#about' className='btn'>
               read more
             </a>
           </article>
