@@ -14,3 +14,7 @@ navBtn.addEventListener('click', () => {
 
 // ********** smooth scroll ************
 // select links
+// git command to specify remote repo
+// git remote add origin
+// git push -u origin master
+// git push
