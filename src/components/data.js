@@ -5,19 +5,6 @@ import tour4 from '../images/tour-4.jpeg'
 import tour5 from '../images/tour-5.jpeg'
 import tour6 from '../images/tour-6.jpeg'
 
-export const footerIcons = [
-  { href: 'https://www.facebook.com', iconClass: 'fab fa-facebook', target: '_blank' },
-  { href: 'https://www.twitter.com', iconClass: 'fab fa-twitter', target: '_blank' },
-  { href: 'https://www.squarespace.com', iconClass: 'fab fa-squarespace', target: '_blank' },
-]
-
-export const footerNav = [
-  { href: '#home', label: 'home' },
-  { href: '#about', label: 'about' },
-  { href: '#services', label: 'services' },
-  { href: '#featured', label: 'featured' },
-]
-
 export const navIcons = [
   { href: 'https://www.facebook.com', iconClass: 'fab fa-facebook', target: '_blank' },
   { href: 'https://www.twitter.com', iconClass: 'fab fa-twitter', target: '_blank' },
